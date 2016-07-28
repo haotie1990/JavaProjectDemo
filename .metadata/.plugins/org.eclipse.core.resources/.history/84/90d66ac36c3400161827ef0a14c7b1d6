@@ -1,0 +1,10 @@
+package com.gky.http;
+
+public class HttpUrlConnectinDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

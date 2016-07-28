@@ -1,0 +1,35 @@
+package com.gky.thread;
+
+public class ShareData {
+
+	public synchronized char getData() throws InterruptedException {
+		if(!flag){
+			wait();
+		}else{
+			flag = false;
+			notifyAll();
+		}
+		return data;
+	}
+
+	public synchronized void setData(char data) throws InterruptedException {
+		if(flag){
+			wait();
+		}else{
+			flag = true;
+			notifyAll();
+			this.data = data;
+			System.out.println("Product:"+data);
+		}
+	}
+
+	public ShareData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private volatile char data;
+	
+	private volatile boolean flag = false;
+	
+	
+}

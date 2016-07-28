@@ -1,0 +1,25 @@
+import javax.swing.text.html.HTMLDocument.HTMLReader.IsindexAction;
+
+
+public class MyThread implements Runnable{
+
+	public static void main(String[] args) throws InterruptedException {
+		// TODO Auto-generated method stub
+		/*Thread mThread = new Thread(new MyThread());
+		mThread.start();
+		System.out.println("m1");
+		mThread.join();
+		System.out.println("m2");*/
+		StringBuilder str = new StringBuilder(Integer.toHexString(10));
+		String mac = (str.length() == 1) ? str.insert(0, 0).toString() : str.toString();
+	    System.out.println(Integer.toHexString(160));
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println("r1");
+		System.out.println("r2");
+	}
+
+}

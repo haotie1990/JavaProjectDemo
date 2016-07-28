@@ -1,0 +1,8 @@
+package com.gky.thread;
+
+public class Sub extends Super{
+
+	static int getID(){
+		return 2;
+	}
+}

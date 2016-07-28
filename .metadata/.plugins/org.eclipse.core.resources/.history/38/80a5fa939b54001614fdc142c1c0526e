@@ -1,0 +1,20 @@
+package com.gky.thread;
+
+public class ShareData {
+
+	public synchronized char getData() {
+		return data;
+	}
+
+	public synchronized void setData(char data) {
+		this.data = data;
+	}
+
+	public ShareData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private volatile char data;
+	
+	
+}

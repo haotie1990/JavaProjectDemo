@@ -1,0 +1,30 @@
+package com.gky.http;
+
+import java.io.IOException;
+import java.net.HttpURLConnection;
+import java.net.URL;
+
+public class HttpUrlConnectinDemo {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+		URL url = new URL("http://gank.io/api/data/Android/1/1");
+		HttpURLConnection httpConnection = (HttpURLConnection) url.openConnection();
+		
+		// 设置请求方法，默认GET方法
+		httpConnection.setRequestMethod("GET");
+		
+		// 设置是否向HttpURLConnection输出，默认为false，如果需要OutputStream
+		// 想请求体写数据，需要设为true
+		httpConnection.setDoOutput(false);
+		
+		// 是否从HttpURLConnection读入数据，默认为true，如果不要InputStream从响应
+		// 体重读取数据，则可以设为false
+		httpConnection.setDoInput(true);
+		
+		//
+		httpConnection.setUseCaches(true);
+	}
+
+}

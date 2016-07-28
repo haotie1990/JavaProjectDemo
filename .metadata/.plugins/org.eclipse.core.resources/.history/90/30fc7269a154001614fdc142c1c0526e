@@ -1,0 +1,47 @@
+package com.gky.thread;
+
+public class ShareData {
+
+	public synchronized char getData(){
+		try {
+			if(!flag){
+				System.out.println("没有数据！");
+				wait();
+			}else{
+				flag = false;
+				notifyAll();
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		System.out.println("Custome:"+data);
+		return data;
+	}
+
+	public synchronized void setData(char data) {
+		try {
+			if(flag){
+				wait();
+			}else{
+				flag = true;
+				notifyAll();
+				this.data = data;
+				System.out.println("Product:"+data);
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+	public ShareData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	private  char data;
+	
+	private  boolean flag = false;
+	
+	
+}

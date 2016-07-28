@@ -1,0 +1,8 @@
+package com.gky.thread;
+
+public class Super {
+
+	static int getID(){
+		return 1;
+	}
+}

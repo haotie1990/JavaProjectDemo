@@ -1,0 +1,17 @@
+package com.gky.webicon;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+public class GetWebIcon {
+
+	public static void main(String[] args) throws MalformedURLException {
+		
+		String urlStr = "https://shoucang.taobao.com/item_collect_n.htm?spm=875.7931836.a2226mz.10.PJRg1I";
+		
+		URL url = new URL(urlStr);
+		
+		System.out.println(url.getProtocol());
+		System.out.println(url.getHost());
+	}
+}

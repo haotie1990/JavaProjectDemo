@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete element from project &apos;HttpUrlConnectionDemo&apos;&#x0D;&#x0A;- Original project: &apos;HttpUrlConnectionDemo&apos;&#x0D;&#x0A;- Original element: &apos;HttpUrlConnectionDemo/src/com.gky.deme&apos;" description="Delete element" element1="/src&lt;com.gky.deme" element2="/src&lt;com.gky" element3="/src&lt;com" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1466153676552" subPackages="false" version="1.0"/>
-</session>

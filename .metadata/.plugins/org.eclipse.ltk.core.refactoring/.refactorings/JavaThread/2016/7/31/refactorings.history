@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring accessors="true" comment="Delete 3 elements from project &apos;JavaThread&apos;&#x0D;&#x0A;- Original project: &apos;JavaThread&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     com.gky.thread.Sub.java&#x0D;&#x0A;     com.gky.thread.SubStatic.java&#x0D;&#x0A;     com.gky.thread.Super.java" description="Delete elements" element1="/src&lt;com.gky.thread{Sub.java" element2="/src&lt;com.gky.thread{SubStatic.java" element3="/src&lt;com.gky.thread{Super.java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1469698388996" subPackages="false" version="1.0"/>
-</session>
